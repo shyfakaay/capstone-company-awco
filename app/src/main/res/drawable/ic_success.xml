@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Lingkaran luar dengan gradien -->
+    <path
+        android:fillColor="#E1F5FE"
+        android:pathData="M60,0C26.86,0 0,26.86 0,60C0,93.14 26.86,120 60,120C93.14,120 120,93.14 120,60C120,26.86 93.14,0 60,0Z"/>
+
+    <!-- Lingkaran dalam -->
+    <path
+        android:fillColor="#006778"
+        android:pathData="M60,15C34.59,15 14,35.59 14,61C14,86.41 34.59,107 60,107C85.41,107 106,86.41 106,61C106,35.59 85.41,15 60,15ZM60,97C40.12,97 24,80.88 24,61C24,41.12 40.12,25 60,25C79.88,25 96,41.12 96,61C96,80.88 79.88,97 60,97Z"/>
+
+    <!-- Tanda centang -->
+    <path
+        android:fillColor="#006778"
+        android:pathData="M54.29,75.29L35.7,56.7C34.31,55.31 34.31,53.68 35.7,52.29C37.09,50.9 38.72,50.9 40.11,52.29L55,67.17L79.88,42.29C81.27,40.9 82.9,40.9 84.29,42.29C85.68,43.68 85.68,45.31 84.29,46.7L55.7,75.29C54.32,76.68 52.68,76.68 54.29,75.29Z"/>
+</vector>
