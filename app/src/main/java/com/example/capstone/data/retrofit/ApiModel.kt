@@ -6,9 +6,8 @@ data class LoginRequest(
 )
 
 data class LoginResponse(
-    val error: Boolean,
+    val token: String,
     val message: String,
-    val loginResult: LoginResult
 )
 
 data class LoginResult(
@@ -24,6 +23,5 @@ data class RegisterRequest(
 )
 
 data class RegisterResponse(
-    val error: Boolean,
-    val message: String
+    val message: String,
 )

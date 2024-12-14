@@ -19,13 +19,18 @@ class LoginViewModel(private val repository: UserRepository) : ViewModel() {
             repository.login(email, password).collect { result ->
                 _loginResult.value = when (result) {
                     is Result.Success -> {
+                        // Copy data user dan set isLogin menjadi true
                         val user = result.data.copy(isLogin = true)
+
+                        // Simpan session ke UserPreference
                         repository.saveSession(user)
+
                         Result.Success(user)
                     }
-                    is Result.Error -> Result.Error(result.error)
-                    is Result.Loading -> Result.Loading
-                    is Result.Initial -> Result.Initial
+
+                    else -> {
+                        result
+                    }
                 }
             }
         }
